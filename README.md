@@ -148,8 +148,8 @@ Contributions are welcome! Feel free to:
 * Improve the documentation
 
 🏆 Author
-bektas-sari – GitHub
-flask-book-api: GitHub
+* bektas-sari
+* flask-book-api
 
 📜 License
 This project is licensed under the MIT License.
