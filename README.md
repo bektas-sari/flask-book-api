@@ -32,10 +32,7 @@ python run.py
 📌 API Endpoints
 🔹 1. Get All Books
 Endpoint: GET /books
-Response:
-json
-Kopyala
-Düzenle
+```
 [
     {
         "id": 1,
@@ -45,13 +42,11 @@ Düzenle
         "image_url": "/uploads/1984-cover.jpg"
     }
 ]
+```
 🔹 2. Get a Single Book by ID
 Endpoint: GET /books/<id>
 Example: GET /books/1
-Response:
-json
-Kopyala
-Düzenle
+```
 {
     "id": 1,
     "title": "1984",
@@ -59,6 +54,7 @@ Düzenle
     "published_year": 1949,
     "image_url": "/uploads/1984-cover.jpg"
 }
+```
 🔹 3. Add a New Book (With Image Upload)
 Endpoint: POST /books
 Content-Type: multipart/form-data
@@ -70,8 +66,7 @@ image: file (Optional)
 
 Example (cURL Command):
 curl -X POST http://127.0.0.1:5000/books -F "title=Animal Farm" -F "author=George Orwell" -F "published_year=1945" -F "image=@cover.jpg"
-
-Response:
+```
 {
     "id": 2,
     "title": "Animal Farm",
@@ -79,15 +74,14 @@ Response:
     "published_year": 1945,
     "image_url": "/uploads/animal-farm.jpg"
 }
-
+```
 🔹 4. Update a Book
 Endpoint: PUT /books/<id>
 Content-Type: multipart/form-data
 Example Request (Update Title & Author):
 
 curl -X PUT http://127.0.0.1:5000/books/1 -F "title=Brave New World" -F "author=Aldous Huxley"
-
-Response:
+```
 {
     "id": 1,
     "title": "Brave New World",
@@ -95,16 +89,15 @@ Response:
     "published_year": 1949,
     "image_url": "/uploads/1984-cover.jpg"
 }
-
+```
 🔹 5. Delete a Book
 Endpoint: DELETE /books/<id>
 Example: DELETE /books/2
-
-Response:
+```
 {
     "message": "Book deleted successfully"
 }
-
+```
 🔹 6. Serve Uploaded Images
 Endpoint: GET /uploads/<filename>
 Example: GET /uploads/1984-cover.jpg
