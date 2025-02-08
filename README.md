@@ -11,6 +11,7 @@ It also supports **image uploads** for book covers and provides a **simple web i
 - ✅ **Flask CORS support** for cross-origin requests.
 
 ---
+![App Screeshot](https://github.com/user-attachments/assets/9ff0c0b2-3355-458d-b195-e9856031d32e)
 
 ## 🚀 Installation & Setup
 
