@@ -128,6 +128,7 @@ http://127.0.0.1:5000/web
 * Storage: Local file storage for images
 
 📌 Folder Structure
+```
 flask-book-api/
 │── app/
 │   ├── static/
@@ -143,6 +144,7 @@ flask-book-api/
 │── run.py
 │── requirements.txt
 │── README.md
+```
 
 🤝 Contributing
 Contributions are welcome! Feel free to:
